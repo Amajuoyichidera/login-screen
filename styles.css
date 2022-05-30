@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    scroll-behavior: smooth;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vh;
+    font-weight: 500;
+    width: 100vw;
+    padding: 1px;
+}
+img {
+    height: 3vh;
+    width: 1.7vw;
+}
+.all {
+    display: flex;
+}
+.one {
+    background-color: white;
+    padding: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.pane {
+    height: 100%;
+   width: 25vw;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+}
+.p1 {
+    padding-left: 25px;
+}
+
+button, input {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #EFEFEF;
+    background-color: transparent;
+    font-size: 1.7vh;
+    font-weight: bolder;
+}
+input {
+    outline: none;
+}
+::placeholder {
+    color: grey;
+}
+.con1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+.con2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+.logo {
+    margin-left: 125px; 
+    margin-bottom: 15px;
+    height: 30px;
+    width: 30px;
+}
+h3, .tnx {
+    padding-bottom: 8px;
+    padding-left: 37px;
+}
+p {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.log {
+    background-color: #111727;
+    color: white;
+    border: none;
+}
+.or::before {
+    content: "or";
+    display: inline-block;
+    height: 2px;
+    width: 38%;
+    position: relative;
+    vertical-align: middle;
+    overflow: hidden;
+    background: #e6dedeea;
+}
+.or::after{
+    content: "or";
+    display: inline-block;
+    height: 2px;
+    width: 38%;
+    position: relative;
+    vertical-align: middle;
+    overflow: hidden;
+    background: #e6dedeea;
+}
+.or {
+    padding-top: 10px;
+    color: #cababa;
+}
+
+@media screen and (max-width: 768px) {
+    .all {
+        flex-direction: column;
+    }
+    .pane {
+        width: 100%;
+        height: 30%;
+    }
+    .pane {
+        border-radius: 0;
+    }
+    .one {
+        border-radius: 0;
+    }
+    img {
+        width: 20px;
+    }
+}
